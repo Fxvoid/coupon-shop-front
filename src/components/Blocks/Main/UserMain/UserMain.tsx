@@ -82,6 +82,13 @@ const UserMain:FC<UserMainProps> = ({children}) => {
                 onClick={()=> handleLinkClick('organisations')}
                 className={activePage === 'organisations' ? styles.activePage : ''}>Мои организации</Link>
             </div>
+                      <div className={styles.left__item}>
+                
+                <WorkOutlineOutlinedIcon onClick={redirectToOrganisations}/>
+                <Link href={'/user/organisations'}
+                onClick={()=> handleLinkClick('organisations')}
+                className={activePage === 'organisations' ? styles.activePage : ''}>Мои организации</Link>
+            </div>
         </nav>
         <div className={styles.right}>
             {children}
